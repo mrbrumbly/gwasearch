@@ -71,6 +71,6 @@ function prepareForm() {
   let pData = localStorage.getItem('poster');
 
   if (iData) includedTagsField.value = iData;
-  if (eData) includedTagsField.value = eData;
-  if (pData) includedTagsField.value = pData;
+  if (eData) excludedTagsField.value = eData;
+  if (pData) posterField.value = pData;
 }
