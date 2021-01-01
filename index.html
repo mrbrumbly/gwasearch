@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GWA Search</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h2 id="panel_title">GWA Search Panel</h2>
+    <form id="search_form" autocomplete="off">
+      <div class="field_area">
+        <label for="included_tags">Included Tags</label>
+        <textarea name="included_tags" id="included_tags"></textarea>
+      </div>
+      <div class="field_area">
+        <label for="excluded_tags">Excluded Tags</label>
+        <textarea name="excluded_tags" id="excluded_tags"></textarea>
+      </div>
+      <div class="field_area">
+        <label for="poster">Posters</label>
+        <textarea id="poster" name="poster"></textarea>
+      </div>
+      <div class="field_area">
+        <h3 class="section_title">Exclude Flair</h3>
+        <label for="fills">Script Fills</label>
+        <input type="checkbox" id="fills" name="fills">
+        <br />
+        <label for="improv">Improvisations</label>
+        <input type="checkbox" id="improv" name="improv">
+        <br />
+        <label for="rambles">Ramblefaps</label>
+        <input type="checkbox" id="rambles" name="rambles">
+        <br />
+        <label for="offers">Script Offers</label>
+        <input type="checkbox" id="offers" name="offers" checked>
+        <br />
+        <label for="requests">Requests</label>
+        <input type="checkbox" id="requests" name="requests" checked>
+      </div>
+
+      <div class="field_area">
+        <label for="sort">Sort by</label>
+        <select name="sort" id="sort">
+          <option value="new">New</option>
+          <option value="hot">Hot</option>
+          <option value="top">Top</option>
+          <option value="relevance">Relevance</option>
+        </select>
+      </div>
+
+      <div class="field_area">
+        <label for="time">Time Range</label>
+        <select name="time" id="time">
+          <option value="all">All Time</option>
+          <option value="year">Past Year</option>
+          <option value="month">Past Month</option>
+          <option value="week">Past Week</option>
+          <option value="day">Past Day</option>
+          <option value="hour">Past Hour</option>
+        </select>
+      </div>
+
+      <button id="search" type="submit">Search</button>
+    </form>
+
+    <script src="search_script.js"></script>
+  </body>
+</html>
