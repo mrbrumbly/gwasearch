@@ -13,10 +13,6 @@ let rambles = document.getElementById('rambles');
 let offers = document.getElementById('offers');
 let requests = document.getElementById('requests');
 
-window.onload = function start() {
-  prepareForm()
-}
-
 searchForm.addEventListener("submit", function submitSearch(e) {
   e.preventDefault()
   let includedTags = includedTagsField.value
@@ -54,5 +50,5 @@ searchForm.addEventListener("submit", function submitSearch(e) {
     return
   }
 
-  window.location = destination
+  window.open(destination, '_blank'); 
 })
