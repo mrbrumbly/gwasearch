@@ -13,6 +13,10 @@ let rambles = document.getElementById('rambles');
 let offers = document.getElementById('offers');
 let requests = document.getElementById('requests');
 
+window.onload = function start() {
+  prepareForm()
+}
+
 searchForm.addEventListener("submit", function submitSearch(e) {
   e.preventDefault()
   let includedTags = includedTagsField.value
@@ -52,3 +56,19 @@ searchForm.addEventListener("submit", function submitSearch(e) {
 
   window.open(destination, '_blank'); 
 })
+
+function storeSearch() {
+  localStorage.setItem('includedTags', includedTagsField.value);
+  localStorage.setItem('excludedTags', excludedTagsField.value);
+  localStorage.setItem('poster', posterField.value);
+}
+
+function prepareForm() {
+  let iData = localStorage.getItem('includedTags');
+  let eData = localStorage.getItem('excludedTags');
+  let pData = localStorage.getItem('poster');
+
+  if (iData) includedTagsField.value = iData;
+  if (eData) includedTagsField.value = eData;
+  if (pData) includedTagsField.value = pData;
+}
