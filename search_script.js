@@ -21,7 +21,7 @@ searchForm.addEventListener("submit", function submitSearch(e) {
   e.preventDefault()
   let includedTags = includedTagsField.value
   let excludedTags = excludedTagsField.value
-  let excludedArray = excludedTags.replaceAll(",", "").split(' ')
+  let excludedArray = excludedTags.replace(/,/g, "").split(' ')
   let sortValue = sortField.value
   let timeValue = timeField.value
 
@@ -29,7 +29,7 @@ searchForm.addEventListener("submit", function submitSearch(e) {
   let excludedString = excludedTags ? `NOT%20title%3A(${excludedArray.join('%20OR%20')})%20` : "";
 
   let poster = posterField.value
-  let posterArray = poster.replaceAll(",", "").split(' ');
+  let posterArray = poster.replace(/,/g, "").split(' ');
   let posterString = posterField.value ? `author%3A(${posterArray.join('%20OR%20')}%20)` : "";
 
   let flairArray = [];
