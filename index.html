@@ -4,22 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GWA Search</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    
   </head>
   <body>
-    <h2 id="panel_title">GWA Search Panel</h2>
+    <h1 id="panel_title">GWA Search Panel</h2>
     <form id="search_form" autocomplete="off">
-      <div class="field_area">
-        <label for="included_tags">Included Tags</label>
-        <textarea name="included_tags" id="included_tags"></textarea>
-      </div>
-      <div class="field_area">
-        <label for="excluded_tags">Excluded Tags</label>
-        <textarea name="excluded_tags" id="excluded_tags"></textarea>
-      </div>
-      <div class="field_area">
-        <label for="poster">Posters</label>
-        <textarea id="poster" name="poster"></textarea>
+      <div class="textarea_container">
+        <div class="field_area">
+          <label for="included_tags">Included Tags</label>
+          <textarea name="included_tags" id="included_tags"></textarea>
+        </div>
+        <div class="field_area">
+          <label for="excluded_tags">Excluded Tags</label>
+          <textarea name="excluded_tags" id="excluded_tags"></textarea>
+        </div>
+        <div class="field_area">
+          <label for="poster">Posters</label>
+          <textarea id="poster" name="poster"></textarea>
+        </div>
       </div>
       <div class="field_area">
         <h3 class="section_title">Exclude Flair</h3>
