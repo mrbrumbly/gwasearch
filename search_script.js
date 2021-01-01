@@ -44,13 +44,15 @@ searchForm.addEventListener("submit", function submitSearch(e) {
 
   let sortString = `&sort=${sortValue}`
   let timeString = `&t=${timeValue}`
+  
+  let subredditString = "subreddit%3Agonewildaudio%20"
 
-  let queryString =  `${includedString}${excludedString}%20${posterString}${flairString}`;
+  let queryString =  `${subredditString}${includedString}${excludedString}%20${posterString}${flairString}`;
 
   let destination = `${searchPrefix}${queryString}${sortString}${timeString}`  
 
   storeSearch()
-  
+
   if (queryString.length > 512) {
     alert("GWA Search: Search too long.")
     return
