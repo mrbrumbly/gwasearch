@@ -8,11 +8,11 @@ body {
   background: rgb(2,0,36);
   background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(120,227,98,1) 0%, rgba(0,212,255,1) 100%);
   padding: 10px;
+  color: white;
 }
 
 h1 {
   margin-bottom: 10px;
-  color: white;
   font-family: 'Bebas Neue', sans-serif;
   font-size: 44px;
 }
@@ -20,18 +20,10 @@ h1 {
 label {
   font-size: 20px;
   font-family: 'Bebas Neue', sans-serif;
-  color: white;
 }
 
 .textarea_container label {
   display: block;
-}
-
-input[type="text"] {
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 6px;
-  font-weight: 600;
-  font-size: 16px;
 }
 
 textarea {
@@ -43,10 +35,9 @@ textarea {
   padding: 6px;
   border-radius: 3px;
   background-color: inherit;
-  color: white;
   border: 2px solid white;
+  color: white;
 }
-input[type="text"]:focus,
 textarea:focus, 
 button:focus{
   outline: none;
@@ -59,7 +50,6 @@ button {
   border: none;
   cursor: pointer;
   background-color: violet;
-  color: white;
   transition: background-color .4s ease;
 }
 button:hover {
@@ -82,6 +72,5 @@ button:hover {
   text-align: center;
   margin-bottom: 6px;
   font-family: 'Bebas Neue', sans-serif;
-  color: white;
   font-size: 28px;
 }
