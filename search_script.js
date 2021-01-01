@@ -49,6 +49,8 @@ searchForm.addEventListener("submit", function submitSearch(e) {
 
   let destination = `${searchPrefix}${queryString}${sortString}${timeString}`  
 
+  storeSearch()
+  
   if (queryString.length > 512) {
     alert("GWA Search: Search too long.")
     return
